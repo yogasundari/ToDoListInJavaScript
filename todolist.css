@@ -1,0 +1,87 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url('background.jpg'); 
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh; 
+}
+
+.container {
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.9); 
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+}
+
+h1 {
+    margin-bottom: 20px; 
+}
+
+.form-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px; 
+}
+
+/* Task Input and Buttons */
+#inputtask {
+    padding: 10px;
+    font-size: 16px;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    width: 300px; 
+    box-sizing: border-box;
+}
+
+#addtask, #clearbtn, #clearAll {
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 4px;
+    color: #fff;
+    background-color: #28a745;
+    cursor: pointer;
+    margin: 5px; 
+    width: 150px; 
+}
+
+#addtask:hover, #clearbtn:hover, #clearAll:hover {
+    background-color: #218838;
+}
+
+#addlist {
+    list-style-type: none;
+    padding: 0;
+    margin: 20px 0;
+    max-width: 400px; 
+    margin: 20px auto; 
+}
+
+#addlist li {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    margin-bottom: 10px;
+    max-width: 100%;
+}
+
+#addlist input[type="checkbox"] {
+    margin-right: 10px;
+}
+
+#addlist label {
+    font-size: 16px;
+    color: #333;
+}
